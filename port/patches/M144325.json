@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.EllipticTorsion.EllipticTorsionProofs.JetsTwo",
+  "source_sha256": "dbcf0b72c4457f2b3f980a5cc2eda654a8eaa426280c5c4a658b3fd9563f8fd2",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Statement change, equivalent: drop the now-implicit coefficient ring argument from MvPowerSeries.pderiv and PowerSeries.derivative in ccd, Q, cc_derivative, pderiv_one_subst_X0, pderiv_zero_subst_X1, Q_phi, and downstream proofs for Mathlib 4.36.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

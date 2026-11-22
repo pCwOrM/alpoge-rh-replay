@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.GL3MeanSquares.HookFormulaTorsion.FibreCardinalityOfModuliMap",
+  "source_sha256": "8b418524997f220d89433f42942b041f0e55ecd9ff13aa89651147669341e19b",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: replace `rw [hxy, sub_self, norm_zero] at this` with `simp only [hxy, sub_self, norm_zero] at this` in mean_count_of_moduli_space (avoids Submodule Zero instance mismatch on norm_zero in Mathlib 4.36).",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

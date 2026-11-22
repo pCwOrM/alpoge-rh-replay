@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.EisensteinCokernelLengths.FactorialValuationBounds.RationalTailBoundCubic",
+  "source_sha256": "04518a49b39fae2913ee740da90a47e098933ff78e2ca10dddf1c479ea778a2b",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

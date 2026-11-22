@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.GL3MeanSquares.HookFormulaTorsion.ColumnParametrizationOffDiagonal",
+  "source_sha256": "a497a3db1a7a55e52a5451dfb2326cfbad845d803c09608342c3878b9788f1e6",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: replace Finset.prod_le_prod with Finset.prod_le_prod\u2080 for GroupWithZero in Mathlib 4.36.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

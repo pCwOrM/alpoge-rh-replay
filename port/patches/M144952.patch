@@ -1,0 +1,39 @@
+--- a/src/Formalism/GL3MeanSquares/HookFormulaTorsion/ColumnParametrizationOffDiagonal.lean
++++ b/src/Formalism/GL3MeanSquares/HookFormulaTorsion/ColumnParametrizationOffDiagonal.lean
+@@ -99,7 +99,7 @@
+         ≤ ∏ t ∈ range (N - (i : ℕ)), ((nu i : ℝ) + ((t + 1 : ℕ) : ℝ)) := by
+       calc _ ≤ ∏ j ∈ univ.filter (fun j : Fin (N + 1) => i < j),
+               ((nu i : ℝ) + (((j : ℕ) - (i : ℕ) : ℕ) : ℝ)) :=
+-            Finset.prod_le_prod
++            Finset.prod_le_prod₀
+               (fun j hj => le_trans zero_le_one (hd i j (Finset.mem_filter.mp hj).2).1)
+               (fun j hj => (hd i j (Finset.mem_filter.mp hj).2).2)
+         _ = _ := g4w9_prod_gt N i (fun x => (nu i : ℝ) + (x : ℝ))
+@@ -107,13 +107,13 @@
+             ((((nu i : ℤ) - (nu j : ℤ) + ((j : ℕ) : ℤ) - ((i : ℕ) : ℤ)) : ℤ) : ℝ) := by
+       calc (1:ℝ) = ∏ j ∈ univ.filter (fun j : Fin (N + 1) => i < j), (1:ℝ) :=
+             Finset.prod_const_one.symm
+-        _ ≤ _ := Finset.prod_le_prod (fun _ _ => zero_le_one)
++        _ ≤ _ := Finset.prod_le_prod₀ (fun _ _ => zero_le_one)
+               (fun j hj => (hd i j (Finset.mem_filter.mp hj).2).1)
+     have hPle : ∏ t ∈ range (N - (i : ℕ)), ((nu i : ℝ) + ((t + 1 : ℕ) : ℝ))
+         ≤ ((nu 0 : ℝ) + N + 1) ^ (N - (i : ℕ)) := by
+       have h0i : nu i ≤ nu 0 := hnu (by simp [Fin.le_iff_val_le_val])
+       calc _ ≤ ∏ t ∈ range (N - (i : ℕ)), ((nu 0 : ℝ) + N + 1) :=
+-            Finset.prod_le_prod (fun t _ => by positivity)
++            Finset.prod_le_prod₀ (fun t _ => by positivity)
+               (fun t ht => by
+                 have ht' := Finset.mem_range.mp ht
+                 have h5 : nu i + (t + 1) ≤ nu 0 + N + 1 := by omega
+@@ -129,9 +129,9 @@
+         _ ≤ _ := mul_le_mul_of_nonneg_left hPle hfac
+   rw [← Finset.prod_div_distrib]
+   constructor
+-  · exact Finset.prod_le_prod (fun i _ => by positivity) (fun i _ => (hper i).1)
++  · exact Finset.prod_le_prod₀ (fun i _ => by positivity) (fun i _ => (hper i).1)
+   · calc _ ≤ ∏ i : Fin (N + 1), (((nu i).factorial : ℝ) * ((nu 0 : ℝ) + N + 1) ^ (N - (i : ℕ))) :=
+-          Finset.prod_le_prod (fun i _ => le_trans (by positivity) (hper i).1) (fun i _ => (hper i).2)
++          Finset.prod_le_prod₀ (fun i _ => le_trans (by positivity) (hper i).1) (fun i _ => (hper i).2)
+       _ = _ := by rw [Finset.prod_mul_distrib, Finset.prod_pow_eq_pow_sum, g4w9_sum_count N]
+ 
+ theorem mean_log_explicit : MeanLogExplicit := by

@@ -1,0 +1,11 @@
+--- a/src/Formalism/GL3MeanSquares/HookFormulaTorsion/FibreCardinalityOfModuliMap.lean
++++ b/src/Formalism/GL3MeanSquares/HookFormulaTorsion/FibreCardinalityOfModuliMap.lean
+@@ -68,7 +68,7 @@
+     intro x y hxy
+     by_contra hne
+     have := hsep x y hne
+-    rw [hxy, sub_self, norm_zero] at this
++    simp only [hxy, sub_self, norm_zero] at this
+     linarith
+   have hbound : ∀ s : Finset (𝓞 K), (↑s : Set (𝓞 K)) ⊆ S → (s.card : ℝ) ≤ (2 * ρ + 1) ^ d := by
+     intro s hs

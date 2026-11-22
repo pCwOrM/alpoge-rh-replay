@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.FlagUnipotentLattices.MinkowskiFactorialBounds.ConstantProductFormula",
+  "source_sha256": "9a18f92b52b658b625b78a3f82598d16d7f5908fd4a212075b6e207f8a551a1c",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

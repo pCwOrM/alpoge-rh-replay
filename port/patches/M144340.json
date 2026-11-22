@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.EllipticTorsion.EllipticTorsionWeights",
+  "source_sha256": "3b563466d4c4d47988000692a75c36736391470cf135fcba992e64b0a38d7863",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Statement change, equivalent: replace removed MvPolynomial.coeff \u03b1 p with the dot-notation polynomial coefficient projection p.coeff \u03b1 in FrobExpand (definitionally identical coefficient operation on MvPolynomial).",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

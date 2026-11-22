@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.EllipticTorsion.EllipticTorsionProofs.Legendre",
+  "source_sha256": "39699024a5e02c7346dc9a855e8e14fcb518bf94d309d31fea727f52774ce5e8",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

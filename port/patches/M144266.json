@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.DistinguishedUnitIdeals.WordConsts",
+  "source_sha256": "8e91242e168af2bdd48a8cb88990a9b6940f257d8658eb44db42f42a0a518130",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

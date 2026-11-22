@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.EisensteinCokernelLengths.FactorialValuationBounds.GaussRam",
+  "source_sha256": "cc73a1065b6ef433666e6f35bf60d8b419a00bc86c35860d435d460c24ef436d",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

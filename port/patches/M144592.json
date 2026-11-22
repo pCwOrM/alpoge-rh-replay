@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.GL3MeanSquares.AffineFibreCountComparison",
+  "source_sha256": "8ee15587dd21d74116005af341e9d92a37e8b41d6026aff7ef8d09a44aa13b60",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}

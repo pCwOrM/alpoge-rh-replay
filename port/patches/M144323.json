@@ -1,0 +1,8 @@
+{
+  "module": "Formalism.EllipticTorsion.EllipticTorsionProofs.JetsCube",
+  "source_sha256": "2b04eb0e1f8bce66c4517801a31edc26849fdb7c71d96e9346dcc8dc27991441",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Statement change, equivalent: drop the now-implicit coefficient ring argument from MvPowerSeries.pderiv in integral_pderiv, pderiv_map, Dj, and proofs (Mathlib 4.36 made the ring parameter of MvPowerSeries.pderiv implicit; definitionally identical derivative).",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0325-issue-33311-lean436/P0325-receipt.json"
+}
