@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IsUnitDiagOfLower",
+  "source_sha256": "9a6094d3a90398d626f7b4a3570d90981986f6914a6aad466c872988ee516b44",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: pass `(f := algebraMap O E)` explicitly to `Polynomial.IsRoot.map` so Lean 4.36 resolves the target ring.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0254-issue-33550-lean436/P0254-receipt.json"
+}

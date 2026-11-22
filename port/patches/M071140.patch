@@ -1,0 +1,11 @@
+--- a/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IdempotentDecompositionOfIntegrality.lean
++++ b/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/IdempotentDecompositionOfIntegrality.lean
+@@ -89,7 +89,7 @@
+       change ψ (algebraMap F A.K c * f i) (e.symm i) = _
+       rw [map_mul, AlgEquiv.commutes, hf, Pi.mul_apply, Pi.single_eq_same, mul_one, Pi.algebraMap_apply]
+     rw [h2] at h1
+-    have h3 := (isIntegral_algebraMap_iff (algebraMap F (A.K ⧸ (e.symm i).asIdeal)).injective).1 h1
++    have h3 := isIntegral_algebraMap_iff.1 h1
+     have h4 := (Valuation.integer.integers (NormedField.valuation (K := F))).mem_of_integral h3
+     rw [Valuation.mem_integer_iff, NormedField.valuation_apply] at h4
+     have h5 : ‖c‖ ≤ 1 := by exact_mod_cast h4

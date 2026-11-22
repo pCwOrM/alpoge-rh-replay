@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteUnitsQuotSqFiniteEtaleHermitianPair",
+  "source_sha256": "c7518f721d3cc8b8b783f6e71e006f4b8e2e0e716d81e944bf7b0d6d431d50fe",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: factor `\u03c6` through `K\u02e3 \u29f8 \u03c6.ker` using `Quotient.lift` instead of `QuotientGroup.kerLift_injective \u03c6` to avoid a `Pi.mulOneClass` vs `Group.toDivInvMonoid` instance mismatch in Mathlib 4.36.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0254-issue-33550-lean436/P0254-receipt.json"
+}

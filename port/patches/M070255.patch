@@ -1,0 +1,26 @@
+--- a/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteUnitsQuotSqFiniteEtaleHermitianPair.lean
++++ b/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FiniteUnitsQuotSqFiniteEtaleHermitianPair.lean
+@@ -149,7 +149,22 @@
+         (K ⧸ I.asIdeal)ˣ ⧸ (powMonoidHom 2 : (K ⧸ I.asIdeal)ˣ →* (K ⧸ I.asIdeal)ˣ).range) = 1
+       rw [QuotientGroup.eq_one_iff, map_pow]
+       exact ⟨_, rfl⟩
+-  have := Finite.of_injective _ (QuotientGroup.kerLift_injective φ)
++  let f : Kˣ ⧸ φ.ker → (I : MaximalSpectrum K) → (K ⧸ I.asIdeal)ˣ ⧸ (powMonoidHom 2 : (K ⧸ I.asIdeal)ˣ →* (K ⧸ I.asIdeal)ˣ).range :=
++    Quotient.lift φ (fun a b hab => by
++      have h : φ (a⁻¹ * b) = 1 := QuotientGroup.leftRel_apply.mp hab
++      rw [map_mul, map_inv] at h
++      funext I
++      have hI := congrFun h I
++      simp only [Pi.mul_apply, Pi.inv_apply, Pi.one_apply, inv_mul_eq_one] at hI
++      exact hI)
++  have hf : Function.Injective f := fun a b hab =>
++    Quotient.inductionOn₂' a b (fun x y h => QuotientGroup.eq.2 (by
++      change φ (x⁻¹ * y) = 1
++      rw [map_mul, map_inv]
++      funext I
++      simp only [Pi.mul_apply, Pi.inv_apply, Pi.one_apply, inv_mul_eq_one]
++      exact congrFun h I)) hab
++  have := Finite.of_injective f hf
+   rw [hker] at this
+   exact this
+ 

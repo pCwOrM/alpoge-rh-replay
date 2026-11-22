@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IdempotentDecompositionOfIntegrality",
+  "source_sha256": "f780c10bfbadbd48e514f0d9279a934efcc2e35a12592a93dc537fedbc3c9be5",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: drop the explicit injectivity argument to `isIntegral_algebraMap_iff` (now inferred via `FaithfulSMul` in Mathlib 4.36).",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0254-issue-33550-lean436/P0254-receipt.json"
+}
