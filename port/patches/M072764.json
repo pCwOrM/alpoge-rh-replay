@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.MoorePowSubSelfEqProd",
+  "source_sha256": "fb8f41d33884a2acd1307b64d6aeac12e72296e95fe12628d5767f09efc63d65",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: replace `FiniteField.X_pow_card_sub_X_natDegree_eq (ZMod p) hp` with `Polynomial.natDegree_X_pow_sub_X hp` and `prod_le_prod` with `prod_le_prod\u2080`.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0123-issue-33568-lean436/P0123-receipt.json"
+}

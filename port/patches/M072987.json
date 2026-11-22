@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.NormSubLeMaxUltra",
+  "source_sha256": "fb37a909e787dbe0d4e429131fe04f8aaaaf9fae51f0e7678760135f113896f9",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: add `Function.swap` to `simp [k, K, col, Matrix.mulVec_single, Function.swap]` for Mathlib 4.36.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0123-issue-33568-lean436/P0123-receipt.json"
+}

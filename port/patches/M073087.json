@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.OverExtAlgebraMap",
+  "source_sha256": "2fddbf46600198be77ac1d039281d6a6709d811daa24a36a6fee9e7ed4bbbbb0",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0123-issue-33568-lean436/P0123-receipt.json"
+}

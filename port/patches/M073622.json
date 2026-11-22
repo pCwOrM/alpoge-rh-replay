@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.RelIndexNeZeroOfBetween",
+  "source_sha256": "61d952c96c57b2e1e7cde7293d01e7e6c1c873aef346d5dd07b92a92b6e48cd4",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "unchanged",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0123-issue-33568-lean436/P0123-receipt.json"
+}

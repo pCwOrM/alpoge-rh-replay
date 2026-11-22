@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.IntegralSumIndicatorTranslate",
+  "source_sha256": "64d26ca1c7371d74cd29b574594fa6c9f6ed7d19668cff6afec8b38361da14de",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: update `continuous_mul_right` to `continuous_mul_const` and `integral_finset_sum` to `integral_finsetSum` in Mathlib 4.36.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0123-issue-33568-lean436/P0123-receipt.json"
+}

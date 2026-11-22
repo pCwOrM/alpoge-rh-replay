@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LvlPolyDistinguished",
+  "source_sha256": "b4a4b6aa34895d1692d262f6059c113dfc5505078cdeaa6e75d869ab9953ac27",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: rewrite `Polynomial.coeff p n` to dot notation `p.coeff n` for Lean 4.36.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0123-issue-33568-lean436/P0123-receipt.json"
+}

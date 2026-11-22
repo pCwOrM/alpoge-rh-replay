@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LangCountFrobeniusEqMulVecSolutions",
+  "source_sha256": "a80a545c41e98fe9c77bda9deacdcff1136d6209a299aad11eb2b9de7bdbd371",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: replace deprecated `FiniteField.X_pow_card_sub_X_natDegree_eq F hq` / `FiniteField.X_pow_card_sub_X_ne_zero F hq` with `Polynomial.natDegree_X_pow_sub_X hq` / `Polynomial.X_pow_sub_X_ne_zero hq`.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0123-issue-33568-lean436/P0123-receipt.json"
+}

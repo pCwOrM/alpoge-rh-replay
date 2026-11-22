@@ -1,0 +1,11 @@
+--- a/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormSubLeMaxUltra.lean
++++ b/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/NormSubLeMaxUltra.lean
+@@ -84,7 +84,7 @@
+       exact mul_le_one₀ (hv _) (norm_nonneg _) (hw _)
+   refine ⟨k, fun i j => ⟨by simpa [k, K] using hcol j i, by simpa [k, L] using hrow i j⟩, ?_, ?_⟩
+   · ext a
+-    simp [k, K, col, Matrix.mulVec_single]
++    simp [k, K, col, Matrix.mulVec_single, Function.swap]
+   · ext b
+     rw [show (w ᵥ* (k : Matrix _ _ F)) b = row (Fin.last r) ⬝ᵥ col b by
+       simp [k, K, row, Matrix.vecMul, dotProduct]]

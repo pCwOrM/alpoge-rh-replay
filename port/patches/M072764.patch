@@ -1,0 +1,20 @@
+--- a/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MoorePowSubSelfEqProd.lean
++++ b/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/MoorePowSubSelfEqProd.lean
+@@ -13,7 +13,7 @@
+   have hp : 1 < p := (Fact.out : p.Prime).one_lt
+   have hroots := FiniteField.roots_X_pow_card_sub_X (ZMod p)
+   rw [ZMod.card] at hroots
+-  have hdeg : (X ^ p - X : (ZMod p)[X]).natDegree = p := FiniteField.X_pow_card_sub_X_natDegree_eq (ZMod p) hp
++  have hdeg : (X ^ p - X : (ZMod p)[X]).natDegree = p := Polynomial.natDegree_X_pow_sub_X hp
+   have hmon : (X ^ p - X : (ZMod p)[X]).Monic := by
+     apply Polynomial.monic_X_pow_sub
+     rw [Polynomial.degree_X]
+@@ -53,7 +53,7 @@
+   rw [moore_step_eq_prod, norm_prod]
+   have : r ^ p = ∏ _c : ZMod p, r := by simp
+   rw [this]
+-  refine Finset.prod_le_prod (fun _ _ => hr) fun c _ => ?_
++  refine Finset.prod_le_prod₀ (fun _ _ => hr) fun c _ => ?_
+   have := h (-(c.val : ℤ))
+   simpa only [Int.cast_neg, Int.cast_natCast, neg_mul, ← sub_eq_add_neg] using this
+ 

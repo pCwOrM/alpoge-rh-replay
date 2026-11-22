@@ -1,0 +1,8 @@
+{
+  "module": "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.JacquetRallisBorderedMatrixNormalFormInvariants",
+  "source_sha256": "db8d2e9ac5f589717f483363b45a22ed2dfee8c8faf8e418a0dae3c630deac2d",
+  "lean": "leanprover/lean4:v4.36.0",
+  "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+  "notes": "Proof-only: qualify `Matrix.mul_apply` and add `Function.swap` to `simp [mulVec_single, Bm, Function.swap]` for Mathlib 4.36.",
+  "evidence": "https://github.com/pCwOrM/alpoge-rh-replay/releases/download/port-P0123-issue-33568-lean436/P0123-receipt.json"
+}
